@@ -59,4 +59,11 @@ class AppTexts {
   static const String youMightAlsoLike = 'You Might Also Like';
   static const String addToCart = 'Add To Cart';
   static const String postedDate = 'Iyun 29, 2023';
+  static const String reviewAllCount = '5 Review';
+  static const String writeReview = 'Write Review';
+  static const String writeTitle = 'Please write Overall level of satisfaction with your shipping / Delivery Service';
+  static const String assessment = '4/5';
+  static const String writeYourReview = 'Write Your Review';
+  static const String writeYourReviewHere = 'Write your review here';
+  static const String addPhoto = 'Add Photo';
 }

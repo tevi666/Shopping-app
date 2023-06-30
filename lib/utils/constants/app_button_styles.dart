@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shoppingapp/utils/constants/app_borders.dart';
 
 import 'app_colors.dart';
 
@@ -10,9 +11,7 @@ class AppButtonStyles {
 
   ButtonStyle elevatedButtonStyle() {
     return ElevatedButton.styleFrom(
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(5.0),
-        ),
+        shape: AppBorders.rRBBRC5,
         minimumSize: Size(deviceWidth, deviceHeight / 15),
         backgroundColor: AppColors.bgSplash,
         elevation: 0);
@@ -20,10 +19,8 @@ class AppButtonStyles {
 
   ButtonStyle outlinedButtonStyle() {
     return OutlinedButton.styleFrom(
-      side: const BorderSide(color: AppColors.borderInputColor),
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(5.0),
-      ),
+      side: AppBorders.bSCBIC,
+      shape: AppBorders.rRBBRC5,
       minimumSize: Size(deviceWidth, deviceHeight / 15),
     );
   }

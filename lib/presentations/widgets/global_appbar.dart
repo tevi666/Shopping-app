@@ -6,15 +6,15 @@ import 'global_app_bar_title.dart';
 class GlobalAppbar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Size get preferredSize => const Size.fromHeight(78);
-  const GlobalAppbar({super.key, required this.text, required this.icon});
+  const GlobalAppbar({super.key, required this.text, this.icon});
   final String text;
-  final IconData icon;
+  final IconData? icon;
 
   @override
   Widget build(BuildContext context) {
     return AppBar(
       title: GlobalAppBarTitle(text: text),
-      actions: [GlobalAppBarIcon(icon: icon)],
+      actions: icon != null ? [GlobalAppBarIcon(icon: icon!)] : null,
     );
   }
 }

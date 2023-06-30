@@ -5,6 +5,7 @@ class AppPaddings {
 
   static const EdgeInsets a8 = EdgeInsets.all(8);
   static const EdgeInsets a0 = EdgeInsets.all(0);
+  static const EdgeInsets a24 = EdgeInsets.all(24);
   static const EdgeInsets zero = EdgeInsets.zero;
   static const EdgeInsets a4 = EdgeInsets.all(4);
   static const EdgeInsets a2 = EdgeInsets.all(2);
@@ -25,12 +26,13 @@ class AppPaddings {
   static const EdgeInsets h10 = EdgeInsets.symmetric(horizontal: 10);
   static const EdgeInsets h12 = EdgeInsets.symmetric(horizontal: 12);
   static const EdgeInsets h16 = EdgeInsets.symmetric(horizontal: 16);
+  static const EdgeInsets b16 = EdgeInsets.symmetric(horizontal: 16);
   static const EdgeInsets h20 = EdgeInsets.symmetric(horizontal: 20);
   static const EdgeInsets h19 = EdgeInsets.symmetric(horizontal: 19);
   static const EdgeInsets h24 = EdgeInsets.symmetric(horizontal: 24);
   static const EdgeInsets h4 = EdgeInsets.symmetric(horizontal: 4);
   static const EdgeInsets h32 = EdgeInsets.symmetric(horizontal: 32);
-  static const EdgeInsets h30 = EdgeInsets.symmetric(horizontal: 30);
+  static const EdgeInsets h30 = EdgeInsets.only(bottom: 16);
 
   static const EdgeInsets t8 = EdgeInsets.only(top: 8);
   static const EdgeInsets t3 = EdgeInsets.only(top: 3);
@@ -55,6 +57,7 @@ class AppPaddings {
   static const EdgeInsets t15 = EdgeInsets.only(top: 15);
   static const EdgeInsets r20 = EdgeInsets.only(right: 20);
   static const EdgeInsets r15 = EdgeInsets.only(right: 15);
+  static const EdgeInsets r12 = EdgeInsets.only(right: 12);
   static const EdgeInsets r30 = EdgeInsets.only(right: 30);
   static const EdgeInsets r35 = EdgeInsets.only(right: 35);
   static const EdgeInsets r100 = EdgeInsets.only(right: 100);
@@ -137,7 +140,4 @@ class AppPaddings {
   static const EdgeInsets t30b27 = EdgeInsets.only(top: 30, bottom: 27);
   static const EdgeInsets t8b28 = EdgeInsets.only(top: 8, bottom: 28);
   static const EdgeInsets h40 = EdgeInsets.symmetric(horizontal: 40);
-  static SliverGridDelegateWithFixedCrossAxisCount gridDelegate(bool isFavorite) =>
-      SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: 2, childAspectRatio: isFavorite ? 3 / 3.9 : 3 / 3.78, mainAxisSpacing: 12);
 }

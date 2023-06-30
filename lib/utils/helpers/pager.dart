@@ -3,12 +3,13 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:shoppingapp/cubits/navigation_bar/navigation_bar_cubit.dart';
 import 'package:shoppingapp/cubits/pagination/current_slide_cubit.dart';
 import 'package:shoppingapp/presentations/pages/favorite/favorite_page.dart';
-
 import '../../cubits/login/login_cubit.dart';
 import '../../cubits/splash/splash_cubit.dart';
 import '../../presentations/pages/home/home_page.dart';
 import '../../presentations/pages/login/login_page.dart';
 import '../../presentations/pages/productDetail/product_detail_page.dart';
+import '../../presentations/pages/productDetail/screens/allReview/all_review_screen.dart';
+import '../../presentations/pages/productDetail/screens/writeReview/write_review_screen.dart';
 import '../../presentations/pages/register/register_page.dart';
 import '../../presentations/pages/splash/splash_page.dart';
 
@@ -21,6 +22,8 @@ class Pager {
       );
   static Widget get register => const RegisterPage();
   static Widget get favorite => const FavoritePage();
+  static Widget get allReview => const AllReviewScreen();
+  static Widget get writeReview => const WriteReviewScreen();
   static Widget get productDetail => BlocProvider(
     create: (context) => CurrentSlideCubit(),
     child: const ProductDetailPage());

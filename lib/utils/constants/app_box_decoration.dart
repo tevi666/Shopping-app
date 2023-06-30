@@ -1,3 +1,6 @@
+import 'package:shoppingapp/utils/constants/app_border_radius.dart';
+import 'package:shoppingapp/utils/constants/app_borders.dart';
+
 import '../../presentations/pages/home/home.dart';
 import 'app_colors.dart';
 
@@ -5,7 +8,7 @@ class AppBoxDecoration {
   AppBoxDecoration._();
 
   static get notificationsDecor => const BoxDecoration(
-        color: Colors.red,
+        color: AppColors.redColor,
         shape: BoxShape.circle,
       );
   static circularPaginationItemsDecor(currentSlide, index,
@@ -14,45 +17,36 @@ class AppBoxDecoration {
         shape: BoxShape.circle,
         color: isSelected ? AppColors.bgSplash : AppColors.borderInputColor,
       );
-  static get categoryDecor => const BoxDecoration(
+  static get categoryDecor => BoxDecoration(
         shape: BoxShape.circle,
-        border: Border.fromBorderSide(
-            BorderSide(color: AppColors.borderInputColor)),
+        border: AppBorders.bFBSBIC,
         color: AppColors.transparent,
       );
   static selectedDecor(Color color) => BoxDecoration(
         shape: BoxShape.circle,
-        border: const Border.fromBorderSide(
-            BorderSide(color: AppColors.borderInputColor)),
+        border: AppBorders.bFBSBIC,
         color: color,
       );
 
-  static get productItemDecor => const BoxDecoration(
-      border: Border.fromBorderSide(
-        BorderSide(
-          color: AppColors.borderInputColor,
-        ),
-      ),
+  static get productItemDecor => BoxDecoration(
+      border: AppBorders.bFBSBIC,
       color: Colors.transparent);
 
   static get notificationsIconDecor => BoxDecoration(
         color: AppColors.redColor,
         shape: BoxShape.circle,
-        border: Border.all(
-          width: 3,
-          color: AppColors.scaffoldBgColor,
-        ),
+        border: AppBorders.w3CSBgC,
       );
   static get bottomNavigationBarDecor => BoxDecoration(
         color: AppColors.scaffoldBgColor,
-        border: Border.all(
-          color: AppColors.borderInputColor,
-          width: 1,
-        ),
+        border: AppBorders.w1CIC,
       );
   static homePaginationDecor(currentSlideCubit, index) => BoxDecoration(
       shape: BoxShape.circle,
       color: currentSlideCubit.state == index
           ? AppColors.bgSplash
           : AppColors.borderInputColor);
+  static get writeReviewAddPhotoIconDecor => BoxDecoration(
+      borderRadius: AppBorderRadius.all5,
+      border: AppBorders.w1CIC);
 }

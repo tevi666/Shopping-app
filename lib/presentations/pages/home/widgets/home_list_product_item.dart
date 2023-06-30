@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shoppingapp/utils/constants/app_paddings.dart';
+import 'package:shoppingapp/utils/extensions/padding_extensions.dart';
 
 import '../models/product_model.dart';
 import 'home_product_item.dart';
@@ -19,7 +20,7 @@ class HomeListProductItem extends StatelessWidget {
               padding: AppPaddings.r16,
               child: GridView.builder(
                 physics: const NeverScrollableScrollPhysics(),
-                gridDelegate: AppPaddings.gridDelegate(isFavorite),
+                gridDelegate: isFavorite.gridDelegate,
                 itemCount: products.length,
                 itemBuilder: (context, index) {
                   List<ProductModel> productList = products;

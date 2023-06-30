@@ -88,4 +88,9 @@ class AppTextStyles {
           fontSize: 12,
           color: AppColors.subtitleColor,
           fontWeight: FontWeight.w400);
+
+  static TextStyle get globalInputDecorationTextStyle => const TextStyle(
+      color: AppColors.btnOutlinedTitleColor,
+      fontFamily: 'PoppinsLight',
+      fontWeight: FontWeight.w400);
 }

@@ -10,7 +10,7 @@ class ProductDetailButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: AppPaddings.h16,
+      padding: AppPaddings.b16,
       child: GlobalButton(
         buttonText: AppTexts.addToCart,
         onPressed: () {},

@@ -1,8 +1,4 @@
-import 'package:flutter/material.dart';
-
 import '../../cubits/pagination/current_slide_cubit.dart';
-import '../../utils/constants/app_box_decoration.dart';
-import '../../utils/constants/app_paddings.dart';
 import '../pages/home/home.dart';
 
 class GlobalPaginationSlider extends StatelessWidget {

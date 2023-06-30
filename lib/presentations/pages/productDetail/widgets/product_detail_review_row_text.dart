@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:shoppingapp/utils/helpers/go.dart';
+import 'package:shoppingapp/utils/helpers/pager.dart';
 
 import '../../../../utils/constants/app_paddings.dart';
 import '../../../../utils/constants/app_texts.dart';
@@ -12,6 +14,7 @@ class ProductDetailReviewRowText extends StatelessWidget {
     return GlobalRowText(
         textLeft: AppTexts.reviewProduct,
         textRight: AppTexts.seeMore,
+        onTap: () => Go.to(context, Pager.allReview),
         padding: AppPaddings.h16 + AppPaddings.t24);
   }
 }

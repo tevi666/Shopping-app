@@ -12,7 +12,11 @@ class Toast {
         backgroundColor: color,
         behavior: SnackBarBehavior.floating,
         content: Center(
-          child: Text(text, style: Theme.of(context).textTheme.labelSmall?.copyWith(color: AppColors.scaffoldBgColor)),
+          child: Text(text,
+              style: Theme.of(context)
+                  .textTheme
+                  .labelSmall
+                  ?.copyWith(color: AppColors.scaffoldBgColor)),
         )));
   }
 }

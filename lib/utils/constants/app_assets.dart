@@ -21,5 +21,6 @@ class AppAssets {
   static const String productImage = '$img/product_image.png';
   static const String avatarReview = '$img/added_review_post_avatar.png';
   static const String reviewImage = '$img/review_image.png';
+  static const String star = '$img/star.png';
 
 }

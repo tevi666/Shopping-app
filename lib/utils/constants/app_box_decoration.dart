@@ -49,4 +49,6 @@ class AppBoxDecoration {
   static get writeReviewAddPhotoIconDecor => BoxDecoration(
       borderRadius: AppBorderRadius.all5,
       border: AppBorders.w1CIC);
+      static get feedImageRadiusDecor => BoxDecoration(
+      borderRadius: AppBorderRadius.all5);
 }

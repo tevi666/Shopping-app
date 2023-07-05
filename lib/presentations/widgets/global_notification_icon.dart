@@ -10,16 +10,17 @@ class GlobalNotificationIcon extends StatelessWidget {
       required this.size,
       required this.width,
       required this.height,
-      required this.text});
+      required this.text, required this.aligment});
   final IconData icon;
   final double size;
   final double width;
   final double height;
   final String text;
+  final AlignmentGeometry aligment;
   @override
   Widget build(BuildContext context) {
     return Stack(
-      alignment: const Alignment(4, -5),
+      alignment: aligment,
       children: [
         Icon(
           icon,

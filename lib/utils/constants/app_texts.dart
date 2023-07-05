@@ -33,6 +33,7 @@ class AppTexts {
   static const String offer = 'Offer';
   static const String account = 'Account';
   static const String two = '2';
+  static const String three = '3';
   static const String empty = '';
   static const String isNotValid = 'Is not valid email or password';
   static const String welcome = 'Welcome to home page';
@@ -66,4 +67,22 @@ class AppTexts {
   static const String writeYourReview = 'Write Your Review';
   static const String writeYourReviewHere = 'Write your review here';
   static const String addPhoto = 'Add Photo';
+  static const String notification = 'Notification';
+  static const String feed = 'Feed';
+  static const String activity = 'Activity';
+  static const String theBestTitle = 'The Best Title';
+  static const String offerNotificationSubtitleOne = 'Culpa cillum consectetur labore nulla nulla magna irure. Id veniam culpa officia aute dolor amet deserunt ex proident commodo';
+  static const String postedDateNotification = 'April 30, 2014 1:01 PM';
+  static const String summerOffer = 'SUMMER OFFER 98% Cashback';
+  static const String offerNotificationSubtitleTwo = 'Culpa cillum consectetur labore nulla nulla magna irure. Id veniam culpa officia aute dolor';
+  static const String specialOffer = 'Special Offer 25% OFF';
+  static const String offerNotificationSubtitleThree = 'Culpa cillum consectetur labore nulla nulla magna irure. Id veniam culpa officia aute dolor amet deserunt ex proident commodo';
+  static const String newProduct = 'New Product';
+  static const String bestProduct = 'Best Product';
+  static const String nikeAirZoom = 'Nike Air Zoom Pegasus 36 Miami - Special For your Activity';
+  static const String postedDateFeed = 'June 3, 2015 5:06 PM';
+  static const String transactionNike = 'Transaction Nike Air Zoom Product';
+  static const String transactionNikeMiami = 'Transaction Nike Air Zoom Pegasus 36 Miami';
+  static const String transactionNikeAir = 'Transaction Nike Air Max';
+  static const String poppinsRegular = 'PoppinsRegular';
 }

@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'app_colors.dart';
 
 final darkTheme = ThemeData(
+    splashColor: AppColors.splashColor,
     appBarTheme: const AppBarTheme(backgroundColor: AppColors.scaffoldBgColor, iconTheme: IconThemeData(color: AppColors.btnOutlinedTitleColor, opticalSize: 1), elevation: 0.0, toolbarHeight: 78, shape: Border(bottom: BorderSide(width: 1, color: AppColors.borderInputColor))),
     bottomNavigationBarTheme: const BottomNavigationBarThemeData(backgroundColor: AppColors.scaffoldBgColor),
     scaffoldBackgroundColor: AppColors.scaffoldBgColor,

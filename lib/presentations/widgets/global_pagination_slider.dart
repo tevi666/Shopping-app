@@ -16,14 +16,12 @@ class GlobalPaginationSlider extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: slides.asMap().entries.map((entry) {
               final int index = entry.key;
-              return GestureDetector(
-                child: Container(
-                  width: 10,
-                  height: 10,
-                  margin: AppPaddings.h4,
-                  decoration: AppBoxDecoration.homePaginationDecor(
-                      currentSlideCubit, index),
-                ),
+              return Container(
+                width: 10,
+                height: 10,
+                margin: AppPaddings.h4,
+                decoration: AppBoxDecoration.homePaginationDecor(
+                    currentSlideCubit, index),
               );
             }).toList(),
           );

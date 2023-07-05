@@ -14,6 +14,7 @@ class HomeCartBottonNavbarIcon extends StatelessWidget {
       size: 24,
       text: AppTexts.two,
       width: 20,
+      aligment: Alignment(4, -5),
     );
   }
 }

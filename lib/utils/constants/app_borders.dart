@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/material.dart';
 import 'package:shoppingapp/utils/constants/app_border_radius.dart';
 
 import 'app_colors.dart';

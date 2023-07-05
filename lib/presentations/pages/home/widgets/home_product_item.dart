@@ -1,3 +1,5 @@
+import 'package:shoppingapp/utils/constants/app_colors.dart';
+
 import '../home.dart';
 
 class HomeProductItem extends StatelessWidget {
